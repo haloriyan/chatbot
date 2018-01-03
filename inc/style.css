@@ -1,0 +1,41 @@
+body { background-color: #ecf0f1;font-family: sans-serif; }
+.atas {
+	position: fixed;
+	top: 0px;left: 0px;right: 0px;
+	line-height: 65px;
+	background-color: #3498db;
+	color: #fff;
+}
+.judul {
+	margin: 0;
+	float: left;
+	margin-left: 5%;
+	font-size: 24px;
+}
+.konten {
+	position: absolute;
+	top: 99px;left: 25%;
+	width: 50%;
+	background-color: #fff;
+	color: #444;
+	border: 1px solid #aaa;
+}
+.wrap { margin: 1.45% 5% 1.7% 5%; }
+.box {
+	width: 89%;
+	height: 60px;
+	font-size: 22px;
+	color: #444;
+	padding: 1px 25px 1px 25px;
+}
+.konten form .box { width: 68%; }
+#nanya {
+	width: 20%;
+	height: 66px;
+	font-size: 22px;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	margin-left: 2%;
+}
+.konten .wrap { margin-top: 30px;margin-bottom: 34px; }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<title>Bot</title>
+	<link href="inc/style.css" rel="stylesheet">
+	<script src="inc/jquery-3.1.1.js"></script>
+	<script src="inc/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#nanya").click(function() {
+				var tanya = $("#tanya").val();
+				var nanya = 'tanya='+tanya;
+				$.ajax({
+					type: "POST",
+					url: "bertanya.php",
+					data: nanya,
+					success: function() {
+						$("#jawaban").load("loadJawaban.php");
+					}
+				});
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="atas">
+	<h1 class="judul">Chatbot by Riyan</h1>
+</div>
+
+<div class="konten">
+	<div class="wrap">
+		<form>
+			<input type="text" class="box" id="tanya" placeholder="Masukkan pertanyaan..." required>
+			<button id="nanya">Submit</button>
+		</form>
+		<div id="jawaban"></div>
+	</div>
+</div>
+
+<!-- POKkIBZ3QBR3VZFgmkgpte7EJ -->
+
+</body>
+</html>
